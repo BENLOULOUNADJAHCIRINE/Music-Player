@@ -70,10 +70,7 @@ audio.addEventListener("ended", () => {
 // controlling using keyboard input
 window.addEventListener("keydown", (e) => {
   if (!isNaN(e.key) && e.key !== " ") {
-    const minutes = Number(e.key) * 60;
-    if (minutes < audio.duration) {
-      audio.currentTime = minutes;
-    }
+    audio.currentTime = (Number(e.key) / 10) * audio.duration;
   }
 
   switch (e.key) {
