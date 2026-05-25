@@ -31,7 +31,7 @@ body {
   justify-content: center;
   gap: 65px;
 }
-.playerTitle img:first-child {
+/* .playerTitle img:first-child {
   width: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -46,13 +46,13 @@ body {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
-}
+} */
 
 .playerTitle p {
   font-size: 20px;
 }
 
-.playerTitle img:last-child {
+.playerTitle img {
   width: 30px;
   cursor: pointer;
 }
@@ -153,8 +153,8 @@ body {
   align-items: center;
 }
 .music-control img {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 
