@@ -88,5 +88,13 @@ window.addEventListener("keydown", (e) => {
         playBtn.style.display = "block";
       }
       break;
+    case "ArrowRight":
+      e.preventDefault();
+      audio.currentTime = audio.currentTime + 10;
+      break;
+    case "ArrowLeft":
+      e.preventDefault;
+      audio.currentTime = audio.currentTime - 10;
+      break;
   }
 });
