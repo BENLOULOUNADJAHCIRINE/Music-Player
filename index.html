@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/music.svg" type="image/svg" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-player">
+      <div class="playerTitle">
+        <img src="Assets/menu.svg" alt="hamburger-bar" />
+        <p>Listening Now</p>
+        <img src="Assets/music.svg" alt="songLogo" />
+      </div>
+      <div class="musicImage">
+        <img src="Assets/The NBHD wallpaper.jpg" alt="" class="music-logo" />
+      </div>
+      <div class="music-time"><p></p></div>
+      <div class="music-title"><p>Cry Baby</p></div>
+      <div class="music-artist"><p>The Neighbourhood</p></div>
+      <div class="music-audio">
+        <audio
+          src="Assets/The Neighbourhood - Cry Baby (Lyrics) (2).mp3"
+          id="audio"
+        ></audio>
+        <div class="music-duration">
+          <span id="currentTime"></span>
+          <span id="duration"></span>
+        </div>
+        <div class="progress-container">
+          <input type="range" id="progressBar" value="0" min="0" max="100" />
+        </div>
+      </div>
+      <div class="music-control">
+        <img src="Assets/Shuffle.png" alt="shuffle" />
+        <img src="Assets/Skip Back.png" alt="skipBack" />
+        <img src="Assets/Rewind.png" alt="Rewind" id="rewindBtn" />
+        <img src="Assets/pause.png" alt="Pause" id="pauseBtn" />
+        <img src="Assets/Play.png" alt="Play" id="playBtn" />
+        <img src="Assets/Fast Fwd.png" alt="FastFwd" id="forwardBtn" />
+        <img src="Assets/Skip Fwd.png" alt="SkipFwd" />
+        <img src="Assets/Repeat.png" alt="Repeat" id="repeatBtn" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
