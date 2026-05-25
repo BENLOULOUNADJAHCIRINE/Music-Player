@@ -66,3 +66,27 @@ audio.addEventListener("ended", () => {
   audio.currentTime = 0;
   audio.play();
 });
+
+// controlling using keyboard input
+window.addEventListener("keydown", (e) => {
+  if (!isNaN(e.key) && e.key !== " ") {
+    const minutes = Number(e.key) * 60;
+    if (minutes < audio.duration) {
+      audio.currentTime = minutes;
+    }
+  }
+
+  switch (e.key) {
+    case " ":
+      if (audio.paused) {
+        audio.play();
+        pauseBtn.style.display = "block";
+        playBtn.style.display = "none";
+      } else {
+        audio.pause();
+        pauseBtn.style.display = "none";
+        playBtn.style.display = "block";
+      }
+      break;
+  }
+});
